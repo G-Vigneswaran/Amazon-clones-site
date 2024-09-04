@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <select class="select">
+    <option selected value=1>1</option>
+    <option value=2>2</option>
+  </select>
+  <button class="add">add</button>
+  <script>
+    document.querySelector('.add').addEventListener('click',()=>{
+      let selectElem=document.querySelector('.select');
+      console.log(selectElem.value);
+    })
+  </script>
+</body>
+</html>
